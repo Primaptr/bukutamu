@@ -29,7 +29,7 @@
   
 
   //query
-  $query = "SELECT * FROM datatamu LIMIT 0, $jumlahDataPerHalaman";
+  $query = "SELECT * FROM datatamu LIMIT $awalData, $jumlahDataPerHalaman";
   if (isset($_GET['keyword'])) {
     $query = "SELECT * FROM datatamu WHERE nama LIKE '%$_GET[keyword]%'";
   }
